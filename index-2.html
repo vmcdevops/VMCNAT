@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="assets/css/it-source-2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+      .appseo-main-header.appseo-sticky-header-overlay .header-button {
+    margin-top: 16px;
+}
       /*---------------------------------------------------- */
 /*(9)- Faq area*/
 /*----------------------------------------------------*/
@@ -33,26 +36,31 @@
 }
 
 .it-nw-faq-content {
-  padding: 50px 50px 0px;
-  background-color: #fff;
+  padding: 50px 50px 39px;
+  background-color: #f2f0f0;
 }
 .it-nw-faq-content .accordion {
-  border-top: 1px solid #d8d8d8;
+  border-top: 0px solid #d8d8d8;
+  background: #fff !important;
 }
 .it-nw-faq-content .faq-header h3 {
   margin-bottom: 0;
 }
-.it-nw-faq-content .faq-body {
+
+  .it-nw-faq-content .faq-body {
     padding: 15px 11px 9px 9px;
     background: #f2f0f0;
+    font-size: 12px;
+    border-radius: 0 0 10px 10px;
 }
+
 .it-nw-faq-content .faq_title:not(.collapsed),
 .it-nw-faq-content .faq_title {
-  color: #000;
-    font-size: 15px;
+  color: #747474;
+    font-size: 13px;
     -webkit-box-shadow: none;
     box-shadow: none;
-    font-weight: 600;
+    font-weight: 400;
     padding: 15px 11px;
     font-family: "Poppins";
     position: relative;
@@ -62,7 +70,7 @@
     border-left: 0;
     border-top: 0;
     width: 100%;
-    background-color: #f2f0f0;
+    background-color: #ffffff;
 }
 .it-nw-faq-content .accordion-item:first-of-type {
   border-radius: 0;
@@ -453,10 +461,11 @@
   padding: 25px 0px 0px 25px;
 }
 .xis-dia-about-text-content .xis-dia-about-list li {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
     padding-left: 20px;
     position: relative;
-    font-size: 15px;
+    font-size: 12px;
+    font-weight: 400;
    
 }
 .xis-dia-about-text-content .xis-dia-about-list li:before {
@@ -1400,6 +1409,12 @@
 
 
 @media screen and (max-width: 380px) {
+  .xis-dia-about-text-wrapper {
+    padding: 3px 0px 0px 2px;
+}
+  .xis-dia-about-img-wrapper{
+    display:none
+  }
     .appseo-banner-section .appseo-banner-content h1 {
         font-size: 27px;
     }
@@ -1522,12 +1537,34 @@ div#popup-1bd0d58b36c07467a60077341156646d {
     background-color: #ccc;
     box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
+
+.appseo-service-section {
+    padding: 85px 0px 57px;
+}
+.viq_tab{
+  display: none;
+}
+.form-select:hover {
+  color: #555555;
+}
+.form-select:focus {
+  color: #555555;
+}
+.form-head {
+    color: #504f4f;
+}
     </style>
 </head>
 
 <body class="appseo-home"  data-spy="scroll" data-target=".appseo-main-navigation" data-offset="80">
 	<!-- preloader - start -->
-	<div id="preloader" class="appseo-preloader"></div>
+  <div class="overlay" id="processing_overlay">
+    <div class="overlay__inner">
+        <div class="overlay__content">
+            <span class="spinner"></span>
+        </div>
+    </div>
+</div>
 	<div class="appseo-up">
 		<a href="#" id="scrollup" class="appseo-scrollup text-center"><i class="fas fa-angle-up"></i></a>
 	</div>
@@ -1546,18 +1583,18 @@ div#popup-1bd0d58b36c07467a60077341156646d {
                             <nav class="appseo-main-navigation clearfix ul-li">
                                 <ul id="appseo-main-nav" class="navbar-nav text-capitalize clearfix">
                                     <li><a class="nav-link" href="#">Home</a></li>
-                                    <li><a class="nav-link" href="#">About</a></li>
-                                    <li><a class="nav-link" href="#">Programs</a></li>
-                                    <li><a class="nav-link" href="#">Results</a></li>
-                                    <li><a class="nav-link" href="#">Leadership Team</a></li>		
+                                    <li><a class="nav-link" href="#about">About</a></li>
+                                    <li><a class="nav-link" href="https://www.vidyamandir.com/Courses/" target="_blank">Programs</a></li>
+                                    <li><a class="nav-link" href="https://www.vidyamandir.com/vmc_results.html" target="_blank">Results</a></li>
+                                    <li><a class="nav-link" href="#founders">Leadership Team</a></li>		
                                 </ul>
                             </nav>
                           
                             <!-- /sidebar -->
                             <button type="button" class="npfWidgetButton npfWidget-1bd0d58b36c07467a60077341156646d d-none">Enquire Now!</button>
                             <div class="header-button text-center appseo-btn-hover text-uppercase">
-                                <a href="#" style="    font-weight: 400;
-    color: #403e3e;" class="">VMC Centres</a>
+                                <a href="https://www.vidyamandir.com/locations.html" style="    font-weight: 400;
+    color: #403e3e;" class="" target="_blank">VMC Centres</a>
                             </div>
                         </div>
                     </div>
@@ -1578,11 +1615,12 @@ div#popup-1bd0d58b36c07467a60077341156646d {
                       </div>
                       <nav class="appseo-mobile-main-navigation  clearfix ul-li">
                         <ul id="main-nav" class="navbar-nav text-capitalize clearfix">
+           
                           <li><a class="nav-link" href="#">Home</a></li>
-                                    <li><a class="nav-link" href="#">About</a></li>
-                                    <li><a class="nav-link" href="#">Programs</a></li>
-                                    <li><a class="nav-link" href="#">Results</a></li>
-                                    <li><a class="nav-link" href="#">Leadership Team</a></li>		
+                          <li><a class="nav-link" href="#about">About</a></li>
+                          <li><a class="nav-link" href="https://www.vidyamandir.com/Courses/" target="_blank">Programs</a></li>
+                          <li><a class="nav-link" href="https://www.vidyamandir.com/vmc_results.html" target="_blank">Results</a></li>
+                          <li><a class="nav-link" href="#founders">Leadership Team</a></li>	
                         </ul>
                       </nav>
                     </div>
@@ -1635,6 +1673,12 @@ div#popup-1bd0d58b36c07467a60077341156646d {
                 <div class="card border-0 text-white rounded-start-4 rounded-end-0" id="register" style="background: #adb3c196 !important;
                 border-radius: 17px !important;
                 margin-top: -14% !important;">
+                
+                <div class="viq_tab">
+                    <p class="click mb-0 text-center d-none"><span> Click Here </span></p>
+                    <input type="radio" name="select_test_type" value="6" id="viq_tab" autocomplete="off">
+                    <label for="viq_tab"> </label>
+                </div>
                     <div class="card-header bg-transparent pb-0 border-0 text-center text-white">
                         <h3 id="" class="cera-bold form-head form-head1" style="color:#343362;    font-weight: 400;
     padding-bottom: 7px !important; margin-bottom: 0px;">  Register Now </h3>
@@ -1798,10 +1842,10 @@ div#popup-1bd0d58b36c07467a60077341156646d {
                     </div>
                     <div class="card-footer text-left text-white border-0 pt-0 px-sm-4  bg-transparent">
                         <div class="row align-items-center g-2 mb-3">
-                            <div class="col-6 text-end pt-2 form-head" style="font-size: 14px;">
+                            <div class="col-5 text-end pt-2 form-head" style="font-size: 14px;text-align: right;">
                                 Registration Fee
                             </div>
-                            <div class="col-6 oswald-bold">
+                            <div class="col-7 oswald-bold">
                                 <div class="registration_fee margin-top-10" id="registration_fee" style="color:  #c81d0a;text-align: left;">
                                 </div>
                             </div>
@@ -1815,7 +1859,9 @@ div#popup-1bd0d58b36c07467a60077341156646d {
                       Proceed to Pay
           </a>
     
-                        <p class="text-center" style="font-size: 12px;">
+                        <p class="text-center" style="    font-size: 12px;
+                        line-height: 16px;
+                        margin-bottom: 0px;">
                             <small class="small fw-semibold form-head" style="line-height: 10px;
               font-size: 9px !important;
               font-weight: 300 !important;color: #3b3a3a;">
@@ -1957,11 +2003,12 @@ div#popup-1bd0d58b36c07467a60077341156646d {
 										 Advantages of NAT
 									</h2>
 									<ul class="mt-4">
-										<li>Assessment of scientific & mathematical aptitude</li>
-										<li>Evaluates strengths, weaknesses and areas of improvement</li>
+                    <li>Get scientifically designed <b>Free Practice Tests, Mock Board Tests</b>, extensive <b>E-study Material</b> for the current class</li>
+										<li>Get a chance to WIN 100% Scholarship*</li>
+										<li>WIN* a chance to enroll in your preferred VMC Classroom / Online Program and get set to realize your dream of becoming an Engineer or a Doctor</li>
 										<li>
-											Identification of Exam Temperament</li>
-										<li>Assesses critical thinking and exam readiness</li>
+											Get FREE Doubt resolution support at your nearest VMC Centre on all days in a week</li>
+										<li>Get exclusive mentorship from India’s Leading Faculty including VMC Founders & Experts</li>
 									</ul>
 									<div class="xis-dia-btn">
 										<a class="d-flex justify-content-center align-items-center text-uppercase" href="#">Register Now <i class="fas fa-arrow-right"></i></a>
@@ -1981,7 +2028,7 @@ div#popup-1bd0d58b36c07467a60077341156646d {
 
 <!-- Start of Skill section
 	============================================= -->
-	<section id="xis-dia-skill " class="xis-dia-skill-section" data-background="assets/img/digital_f/bg/skill-bg.png">
+	<section id="about" class="xis-dia-skill-section" data-background="assets/img/digital_f/bg/skill-bg.png">
 		<div class="container">
 			<div class="xis-dia-section-title xis-dia-headline text-center wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
 				<span>A Legacy of Excellence</span>
@@ -2076,7 +2123,7 @@ div#popup-1bd0d58b36c07467a60077341156646d {
     </section>
 
 
-    <section id="xis-dia-testimonial" class="xis-dia-testimonial-section position-relative">
+    <section id="founders" class="xis-dia-testimonial-section position-relative">
 		<span class="xis-dia-testi-side-shape1 position-absolute"><img src="assets/img/digital_f/shape/side-sh3.png" alt=""></span>
 		<span class="xis-dia-testi-side-shape2 position-absolute"><img src="assets/img/digital_f/shape/side-sh4.png" alt=""></span>
 		<div class="container">
@@ -2098,7 +2145,7 @@ div#popup-1bd0d58b36c07467a60077341156646d {
 							<img src="assets/img/digital_f/testimonial/tf2.jpg" alt="">
 						</button>
 						<button type="button" data-target="#carouselExampleIndicators" data-slide-to="2">
-							<img src="assets/img/digital_f/testimonial/tf3.jpg" alt="">
+							<img src="assets/img/digital_f/testimonial/tf31.jpg" alt="">
 						</button>
 						<button type="button" data-target="#carouselExampleIndicators" data-slide-to="3">
 							<img src="assets/img/f1.png" alt="">
@@ -2216,6 +2263,7 @@ div#popup-1bd0d58b36c07467a60077341156646d {
             <div class="appseo-service-content">
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-5 wow fadeFromUp" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeFromUp;">
+                      <a href="https://www.vidyamandir.com/Courses/" target="_blank">
                         <div class="appseo-service-box position-relative">
                             <div class="appseo-service-icon-text position-relative">
                                 <div class="appseo-service-icon position-relative text-center">
@@ -2228,8 +2276,10 @@ div#popup-1bd0d58b36c07467a60077341156646d {
                                 </div>
                             </div>
                         </div>
+                      </a>
                     </div>
                     <div class="col-lg-4 col-md-5 wow fadeFromUp" data-wow-delay="300ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeFromUp;">
+                      <a href="hhttps://www.vidyamandir.com/vmc_results.html" target="_blank">
                         <div class="appseo-service-box position-relative">
                             <div class="appseo-service-icon-text position-relative">
                                 <div class="appseo-service-icon position-relative text-center">
@@ -2242,8 +2292,10 @@ div#popup-1bd0d58b36c07467a60077341156646d {
                                             </div>
                                         </div>
                                     </div>
+                                    </a>
                                 </div>
                                 <div class="col-lg-4 col-md-5 wow fadeFromUp" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: fadeFromUp;">
+                                  <a href="https://www.vidyamandir.com/locations.html" target="_blank">
                                     <div class="appseo-service-box position-relative">
                                         <div class="appseo-service-icon-text position-relative">
                                             <div class="appseo-service-icon position-relative text-center">
@@ -2256,6 +2308,7 @@ div#popup-1bd0d58b36c07467a60077341156646d {
                                             </div>
                                         </div>
                                     </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -2267,42 +2320,6 @@ div#popup-1bd0d58b36c07467a60077341156646d {
 
 
 
-
-                <section id="clients" class="clients section" style="background-color: #f4f5ff;;">
-
-                  <div class="container aos-init aos-animate" data-aos="fade-up">
-                
-                      <div class="row gy-4">
-                
-                          <div class="col-xl-3 col-md-3 col-6 client-logo">
-                            <a href="https://www.vidyamandir.com/" target="_blank">   <img src="assets/img/VMC-Logo.webp" class="img-fluid" alt="Think IIT Think VMC"></a>
-                          </div>
-                          <!-- End Client Item -->
-                
-                          <div class="col-xl-3 col-md-3 col-6 client-logo">
-                            <a href="https://neet.vidyamandir.com/" target="_blank">   <img src="assets/img/logo-med.webp" class="img-fluid" alt="VMC Medical"></a>
-                          </div>
-                          <!-- End Client Item -->
-                
-                          <div class="col-xl-3 col-md-3 col-6 client-logo">
-                            <a href="https://www.vidyamandir.com/vmc-live-online/" target="_blank">  <img src="assets/img/Online_Logo.webp" class="img-fluid" alt="VMC Online"></a>
-                          </div>
-                          <!-- End Client Item -->
-                
-                          <div class="col-xl-3 col-md-3 col-6 client-logo">
-                            <a href="https://www.vmcstudyabroad.com/" target="_blank">  <img src="assets/img/StudyAbroad_Logo.webp" class="img-fluid" alt="VMC Studyabroad"></a>
-                          </div>
-                          <!-- End Client Item -->
-                
-                
-                
-                
-                
-                      </div>
-                
-                  </div>
-                
-                </section>
                 <section id="it-nw-faq" class="it-nw-faq-section position-relative pt-5 pb-5">
                   <div class="it-nw-faq-sh position-absolute"><img src="assets/img/its-2/fq-bg.png" alt=""></div>
                   <div class="container">
@@ -2312,10 +2329,11 @@ div#popup-1bd0d58b36c07467a60077341156646d {
                     
                     </div>
                     <div class="it-nw-faq-content">
-                      <div class="row">
+                      <div class="row" style="background: #fff;
+    border-radius: 13px;">
                         <div class="col-lg-12 wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInLeft;">
                           <div class="accordion" id="accordionExample">
-                            <div class="faq_area faq_area1 active">
+                            <div class="faq_area faq_area1 active" style="background: #fff !important;">
                               <div class="faq-header" id="heading01">
                                 <h3>
                                   <button class="faq_title collapsed" type="button" data-toggle="collapse" data-target="#collapse01" aria-expanded="false" aria-controls="collapse01">
@@ -2422,6 +2440,45 @@ div#popup-1bd0d58b36c07467a60077341156646d {
                     </div>
                   </div>
                 </section>
+
+
+
+                
+                <section id="clients" class="clients section" style="background-color: #f4f5ff;;">
+
+                  <div class="container aos-init aos-animate" data-aos="fade-up">
+                
+                      <div class="row gy-4">
+                
+                          <div class="col-xl-3 col-md-3 col-6 client-logo">
+                            <a href="https://www.vidyamandir.com/" target="_blank">   <img src="assets/img/VMC-Logo.webp" class="img-fluid" alt="Think IIT Think VMC"></a>
+                          </div>
+                          <!-- End Client Item -->
+                
+                          <div class="col-xl-3 col-md-3 col-6 client-logo">
+                            <a href="https://neet.vidyamandir.com/" target="_blank">   <img src="assets/img/logo-med.webp" class="img-fluid" alt="VMC Medical"></a>
+                          </div>
+                          <!-- End Client Item -->
+                
+                          <div class="col-xl-3 col-md-3 col-6 client-logo">
+                            <a href="https://www.vidyamandir.com/vmc-live-online/" target="_blank">  <img src="assets/img/Online_Logo.webp" class="img-fluid" alt="VMC Online"></a>
+                          </div>
+                          <!-- End Client Item -->
+                
+                          <div class="col-xl-3 col-md-3 col-6 client-logo">
+                            <a href="https://www.vmcstudyabroad.com/" target="_blank">  <img src="assets/img/StudyAbroad_Logo.webp" class="img-fluid" alt="VMC Studyabroad"></a>
+                          </div>
+                          <!-- End Client Item -->
+                
+                
+                
+                
+                
+                      </div>
+                
+                  </div>
+                
+                </section>
     <!-- Start of footer section
         ============================================= -->
         <footer id="appseo-footer-area" class="appseo-footer-area-section position-relative" data-background="assets/img/footer.png">
@@ -2431,9 +2488,7 @@ div#popup-1bd0d58b36c07467a60077341156646d {
                         <div class="col-lg-6">
                             <div class="appseo-footer-widget">
                                 <div class="footer-logo-widget">
-                                    <div class="appseo-footer-logo">
-                                        <img src="https://www.vmcvinit.com/images/vmclogo.webp" alt="">
-                                    </div>
+                                  
                                     <div class="appseo-footer-about pera-content">
                                    
                                         <strong>Address : </strong>
@@ -2443,6 +2498,16 @@ div#popup-1bd0d58b36c07467a60077341156646d {
                                             Opposite Wazirpur Depot,
                                             Pitampura, Delhi</span>
                                     </div>
+                                    <div class="appseo-footer-about pera-content mt-3">
+                                   
+                                      <strong>Phone : </strong>
+                                      <span>8002007500 / 9818795768 / 8585947897</span>
+                                  </div>
+                                  <div class="appseo-footer-about pera-content mt-3">
+                                   
+                                    <strong>Email : </strong>
+                                    <span>support@vidyamandir.com</span>
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -2510,8 +2575,22 @@ div#popup-1bd0d58b36c07467a60077341156646d {
         <script src="assets/js/aos.js"></script>
         <script src="assets/js/slick.js"></script>
         <script src="assets/js/typer-new.js"></script>
+        <script src="assets/js/vinit-2024.js"></script>
         <script src="assets/js/script.js"></script>
         <script src="https://in8cdn.npfs.co/js/widget/npfwpopup.js"></script>
+        <script src="https://code.jivosite.com/widget/tT4NtKH0ck" async></script>
+        
+       
+      <script>
+        $(document).ready(function() {
+            $("#viq_tab, #viq_tab2").click(function() {
+                $("#container").addClass("viq").removeClass("nat");
+            });
+            $("#nat_tab, #nat_tab2").click(function() {
+                $("#container").addClass("nat").removeClass("viq");
+            });
+        });
+    </script>
 <script>
     let npfW1bd0d58b36c07467a60077341156646d = new NpfWidgetsInit({
         "widgetId": "1bd0d58b36c07467a60077341156646d",
