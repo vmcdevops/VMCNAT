@@ -1,5 +1,5 @@
 .appseo-main-header.appseo-sticky-header-overlay .header-button {
-  margin-top: 16px;
+  margin-top: 0px;
 }
     /*---------------------------------------------------- */
 /*(9)- Faq area*/
@@ -1077,7 +1077,8 @@ max-width: 100%;
   align-items: center;
   align-self: center;
   align-content: center;
-  margin-top: 11px;
+
+  margin-top: -3px;
 }
 .xis-dia-about-text-content p {
   font-size: 15px;
@@ -1484,6 +1485,26 @@ color: #555555;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .clients .client-logo img {
+    padding: 20px 23px;
+    max-width: 100%;
+    transition: 0.3s;
+    opacity: 1 !important;
+    filter: none !important;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    display: block;
+}
+.saasio-breadcurmb-section {
+  background-color: #27266a;
+  padding: 150px 0px 70px;
+}
 .xis-dia-about-text-wrapper {
   padding: 3px 0px 0px 2px;
 }

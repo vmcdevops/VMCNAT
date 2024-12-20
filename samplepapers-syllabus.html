@@ -1,0 +1,762 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+      
+        <title>Vidyamandir Classes </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="https://www.vidyamandir.com/favicon.ico">
+    
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.css">
+        <link rel="stylesheet" href="assets/css/fontawesome-all.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/slick-theme.css">
+        <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/digital-agency-3.css">
+        <link rel="stylesheet" href="assets/css/it-source-2.css">
+        <link rel="stylesheet" href="assets/css/nat.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <style>
+            .saasio-breadcurmb-section {
+    background-color: #302d5c;
+    padding: 145px 0px 50px;
+}
+.appseo-main-header .appseo-main-navigation li a {
+    color: #c6c3c3;
+    font-size: 17px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.appseo-main-header .header-button {
+    height: 46px;
+    width: 185px;
+    float: right;
+    line-height: 49px;
+    margin-left: 13px;
+    border-radius: 32px;
+    display: inline-block;
+    background-size: 200% auto;
+    transition: 0.3s all ease-in-out;
+    box-shadow: 1.392px 9.903px 10px 0px rgba(66, 97, 234, 0.21);
+    background-image: linear-gradient(45deg, #ffbc00 15%, #ffbc00 100%);
+    color: #000 !important;
+}
+
+    .mode-li li {
+    display: block;
+    padding-left: 0px !important;
+    font-size: 17px;
+   color: #ffbc00;
+    font-weight: 500;
+    font-family: 'poppins';
+}
+.saas_two_service_section .service_content_box .service_text_box p {
+    line-height: 1.5;
+    color: #666666;
+    font-size: 18px;
+    font-family: 'poppins';
+}
+.saas_two_service_section .service_content_box .service_text_box p {
+    line-height: 1.5;
+    color: #666666;
+    font-size: 18px;
+    font-family: 'poppins';
+}
+.saas_two_service_section .service_content_box .service_text_box h3 {
+    color: #010101;
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 46px;
+}
+.appseo-sticky-header-overlay {
+    background-color: #343362;
+    animation-duration: 0.7s;
+    top: 0px;
+    position: fixed;
+    padding: 5px 0px;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+    animation-timing-function: ease;
+    transition: 0.3s all ease-in-out;
+    padding-bottom: 14px;
+}
+.saas_two_service_section .service_content_box {
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 25px 30px 30px 35px;
+    z-index: 1;
+    background-color: #fff;
+    transition: 0.5s all ease-in-out;
+    box-shadow: 0px 20px 81px 0px rgba(8, 0, 20, 0.14);
+    height: 100%;
+}
+.terms li{
+    margin-bottom: 15px;;
+}
+.saas_two_service_section {
+    padding: 90px 0px 23px;
+}
+.saas_two_section_title {
+    margin: 0 auto;
+    max-width: 750px;
+}
+.saas_two_section_title .title_tag, .saas_two_banner_section .s2-banner_content .s2-tilte_tag, .saas_two_feature_section .s2-feature_text .feature_tag, .integration_section .integration_text .feature_tag {
+    color: #951fb3;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 8px;
+    display: inline-block;
+    background-color: #ede0f4;
+    font-family: 'poppins';
+}
+.saas_two_service_section .service_content {
+    padding-top: 10px;
+}
+.form-control {
+            display: block;
+            width: 100%;
+            padding: .375rem .75rem;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #52565b;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            appearance: none;
+            border-radius: 0px;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            font-size: 12px;
+        }
+        
+        .form-select {
+            display: block;
+            width: 100%;
+            padding: .375rem 2.25rem .375rem .75rem;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #52565b;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-position: right .75rem center;
+            background-size: 16px 12px;
+            border: 1px solid #ced4da;
+            border-radius: 0px;
+            appearance: none;
+        }
+        .download input, .download select, .download .form-select {
+margin-bottom: 12px;
+border: 0px;
+box-shadow: rgba(0, 0, 0, 0.18) 2px 0px 6px 0px;
+border-radius: 20px !important;
+font-size: 14px !important;
+background: rgb(255, 203, 4) !important;
+color: rgb(28, 25, 80) !important;
+height: 39px;
+width: 100%;
+text-align: left;
+padding-left: 18px;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    background: #fff;
+    border: 0;
+}
+.btn-close {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: .25em .25em;
+    color: #000;
+    background: transparent url(assets/img/close.svg) center / 1em auto no-repeat;
+    border: 0;
+    border-radius: 0px;
+    opacity: .5;
+}
+        </style>
+    </head>
+
+    <body class="saas-classic">
+ 
+    <!-- Start of header section
+        ============================================= -->
+        <header id="appseo-header" class="appseo-main-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="appseo-logo">
+                            <a href="#"><img src="assets/img/vmc_logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="appseo-menu-wrapper float-right">
+                            <nav class="appseo-main-navigation clearfix ul-li">
+                                <ul id="appseo-main-nav" class="navbar-nav text-capitalize clearfix">
+                                    <li><a class="nav-link" href="#">Home</a></li>
+                                    <li><a class="nav-link" href="#about">About</a></li>
+                                    <li><a class="nav-link" href="https://www.vidyamandir.com/Courses/" target="_blank">Programs</a></li>
+                                    <li><a class="nav-link" href="https://www.vidyamandir.com/vmc_results.html" target="_blank">Results</a></li>
+                                    <li><a class="nav-link" href="#founders">Leadership Team</a></li>	
+                                 <li class="header-button text-center appseo-btn-hover text-uppercase">   <a href="https://www.vmcnat.com/" style="    font-weight: 400;
+    color: #000; font-weight: 700;" class="" target="_blank">Register Now</a>	</li>
+                                </ul>
+                            </nav>
+                          
+                            <!-- /sidebar -->
+                            <button type="button" class="npfWidgetButton npfWidget-1bd0d58b36c07467a60077341156646d d-none">Enquire Now!</button>
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- //desktop menu -->
+                <div class="appseo-mobile_menu relative-position">
+                  <div class="appseo-mobile_menu_button appseo-open_mobile_menu">
+                    <i class="fas fa-bars"></i>
+                  </div>
+                  <div class="appseo-mobile_menu_wrap">
+                    <div class="mobile_menu_overlay appseo-open_mobile_menu"></div>
+                    <div class="appseo-mobile_menu_content">
+                      <div class="appseo-mobile_menu_close appseo-open_mobile_menu">
+                        <i class="far fa-times-circle"></i>
+                      </div>
+                      <div class="m-brand-logo text-center">
+                        <a href="#"><img src="https://www.vmcvinit.com/images/vmclogo.webp" alt=""></a>
+                      </div>
+                      <nav class="appseo-mobile-main-navigation  clearfix ul-li">
+                        <ul id="main-nav" class="navbar-nav text-capitalize clearfix">
+           
+                          <li><a class="nav-link" href="#">Home</a></li>
+                          <li><a class="nav-link" href="#about">About</a></li>
+                          <li><a class="nav-link" href="https://www.vidyamandir.com/Courses/" target="_blank">Programs</a></li>
+                          <li><a class="nav-link" href="https://www.vidyamandir.com/vmc_results.html" target="_blank">Results</a></li>
+                          <li><a class="nav-link" href="#founders">Leadership Team</a></li>	
+                          <li class="">   <a href="https://www.vmcnat.com/" style="color: #ffffff;
+                            font-weight: 700;
+                            background: #d20202;" class="" target="_blank">Register Now</a>	</li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+        </div>
+    </header>
+    <!-- End of header section
+        ============================================= -->
+
+    <!-- Start of breadcurmb section
+        ============================================= -->
+        <section id="saasio-breadcurmb" class="saasio-breadcurmb-section">
+            <div class="container">
+                <div class="breadcurmb-title text-center">
+                    <h2>Sample Paper & Syllabus</h2>
+                </div>
+                <div class="breadcurmb-item-list text-center ul-li">
+                   <ul class="saasio-page-breadcurmb">
+                       <li><a href="#">Home</a></li>
+                       <li><a href="#">Sample Paper & Syllabus</a></li>
+                   </ul>
+               </div>
+              
+           </div>
+       </section>
+    <!-- End of breadcurmb section
+        ============================================= --> 
+
+    <!-- Start of Service page section
+        ============================================= -->
+        <section id="saas_two_service" class="saas_two_service_section">
+            <div class="container">
+                <div class="saas_two_section_title saas2-headline text-center">
+                    <span class="title_tag">Free Sample Paper & Syllabus </span>
+                    <h2>Download Here<span>
+                    </span> </h2>
+                </div>
+                <!-- /section title -->
+                <div class="service_content">
+                    <div class="row justify-content-md-center d-flex">
+                        <div class="col-lg-12 col-md-12 flex-fill wow fadeFromUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="text-center mb-3 mb-md-5 px-4">
+           
+                                <div style="margin: auto;font-size: 14px;line-height:24px;font-family: 'Poppins';font-weight: normal;padding:16px;text-align: justify;">
+                    
+                                    <div class="shadow pt-sm-5 pt-3 tab-pane border rounded-md-4 active show" id="samplePaper2">
+                                        <p class="text-dark cera-medium h2 text-uppercase mb-sm-5 mb-3 text-center"> Sample Papers </p>
+                        
+                                        <div class="px-sm-4 px-3 mb-3 mx-auto" style="max-width:1000px;">
+                                            <div class="row justify-content-center g-4 mx-auto mb-4">
+                                                <div class="col-md-3 m-2">
+                                                    <div class="border p-3 shadow-sm">
+                                                        <p class="mb-0 h5 text-center">
+                                                            Class 5<sup>th</sup>
+                                                        </p>
+                                                    </div>
+                                                    <a href="assets/pdf/cls5.pdf" class="btn text-white w-100 bg-maroon rounded-0" target="_blank" style="background: #9c0b0b;">
+                                                        Download
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-3 m-2">
+                                                    <div class="border p-3 shadow-sm text-center">
+                                                        <p class="mb-0 h5">
+                                                            Class 6<sup>th</sup>
+                                                        </p>
+                                                    </div>
+                                                    <a href="assets/pdf/cls6.pdf" class="btn text-white w-100 bg-maroon rounded-0" target="_blank" style="background: #9c0b0b;">
+                                                        Download
+                                                    </a>
+                                                </div>
+                        
+                                                <div class="col-md-3 m-2">
+                                                    <div class="border p-3 shadow-sm text-center">
+                                                        <p class="mb-0 h5">
+                                                            Class 7<sup>th</sup>
+                                                        </p>
+                                                    </div>
+                                                    <a href="assets/pdf/cls7.pdf" class="btn text-white w-100 bg-maroon rounded-0" target="_blank" style="background: #9c0b0b;">
+                                                        Download
+                                                    </a>
+                                                </div>
+                        
+                                                <div class="col-md-3 m-2">
+                                                    <div class="border p-3 shadow-sm text-center">
+                                                        <p class="mb-0 h5">
+                                                            Class 8<sup>th</sup>
+                                                        </p>
+                                                    </div>
+                                                    <a href="assets/pdf/cls8.pdf" class="btn text-white w-100 bg-maroon rounded-0" target="_blank" style="background: #9c0b0b;">
+                                                        Download
+                                                    </a>
+                                                </div>
+                        
+                                                <div class="col-md-3 m-2">
+                                                    <div class="border p-3 shadow-sm text-center">
+                                                        <p class="mb-0 h5">
+                                                            Class 9<sup>th</sup>
+                                                        </p>
+                                                    </div>
+                                                    <a href="assets/pdf/cls9.pdf" class="btn text-white w-100 bg-maroon rounded-0" target="_blank" style="background: #9c0b0b;">
+                                                        Download
+                                                    </a>
+                                                </div>
+                        
+                        
+                                                <div class="col-md-3 m-2">
+                                                    <div class="border p-3 shadow-sm text-center">
+                                                        <p class="mb-0 h5">
+                                                            Class 10<sup>th</sup> (JEE)
+                                                        </p>
+                                                    </div>
+                                                    <a href="assets/pdf/cls10J.pdf" class="btn text-white w-100 bg-maroon rounded-0" target="_blank" style="background: #9c0b0b;">
+                                                        Download
+                                                    </a>
+                                                </div>
+                        
+                        
+                        
+                                                <div class="col-md-3 m-2">
+                                                    <div class="border p-3 shadow-sm text-center">
+                                                        <p class="mb-0 h5">
+                                                            Class 10<sup>th</sup> (NEET)
+                                                        </p>
+                                                    </div>
+                                                    <a href="assets/pdf/cls10N.pdf" class="btn text-white w-100 bg-maroon rounded-0" target="_blank" style="background: #9c0b0b;">
+                                                        Download
+                                                    </a>
+                                                </div>
+                        
+                        
+                                                <div class="col-md-3 m-2">
+                                                    <div class="border p-3 shadow-sm text-center">
+                                                        <p class="mb-0 h5">
+                                                            Class 11<sup>th</sup> (JEE)
+                                                        </p>
+                                                    </div>
+                                                    <a href="assets/pdf/cls11J.pdf" class="btn text-white w-100 bg-maroon rounded-0" target="_blank" style="background: #9c0b0b;">
+                                                        Download
+                                                    </a>
+                                                </div>
+                        
+                                                <div class="col-md-3 m-2">
+                                                    <div class="border p-3 shadow-sm text-center">
+                                                        <p class="mb-0 h5">
+                                                            Class 11<sup>th</sup> (NEET)
+                                                        </p>
+                                                    </div>
+                                                    <a href="assets/pdf/cls11N.pdf" class="btn text-white w-100 bg-maroon rounded-0" target="_blank" style="background: #9c0b0b;">
+                                                        Download
+                                                    </a>
+                                                </div>
+                        
+                                            </div>
+                                        </div>
+                        
+                                        <hr class="my-5">
+                        
+                        
+                        
+                                        <div class="row g-4 mb-3">
+                                            <div class="col-md-8 mx-auto">
+                                                <figure>
+                                                    <img src="assets/img/syllbi2024.webp" class="" alt="Syllabus" style="width:500px !important;
+                                                    display: block;
+                                                    margin: 0 auto;">
+                                                </figure>
+                                            </div>
+                                        </div>
+                        
+                                        <p class="text-center mb-4">
+                                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#download">
+                                                <img src="assets/img/download-btn.png" height="60">
+                                              </button>
+                                          
+                                        </p>
+                        
+                        
+                                        <div class="p-4 d-none ">
+                                            <img class="mb-3" src="assets/img/syllbi/JEE-11th.webp" alt="JEE-11th">
+                                            <img class="mb-3" src="assets/img/syllbi/JEE-11th.webp" alt="JEE-11th">
+                                            <img class="mb-3" src="assets/img/syllbi/JEE-11th.webp" alt="medical-11th">
+                                            <img class="mb-3" src="assets/img/syllbi/JEE-11th.webp" alt="medical-10th">
+                                            <img class="mb-3" src="assets/img/syllbi/JEE-11th.webp" alt="9th">
+                                            <img class="mb-3" src="assets/img/syllbi/JEE-11th.webp" alt="8th">
+                                            <img class="mb-3" src="assets/img/syllbi/JEE-11th.webp" alt="8th">
+                                            <img class="mb-3" src="assets/img/syllbi/JEE-11th.webp" alt="8th">
+                                            <img class="mb-3" src="assets/img/syllbi/JEE-11th.webp" alt="8th">
+                                        </div>
+                        
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                      
+                     
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+    <!-- End of Service section-->
+
+
+    <section id="clients" class="clients section" style="background-color: #f4f5ff;;">
+
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+      
+            <div class="row gy-4">
+      
+                <div class="col-xl-3 col-md-3 col-6 client-logo">
+                  <a href="https://www.vidyamandir.com/" target="_blank">   <img src="assets/img/VMC-Logo.webp" class="img-fluid" alt="Think IIT Think VMC"></a>
+                </div>
+                <!-- End Client Item -->
+      
+                <div class="col-xl-3 col-md-3 col-6 client-logo">
+                  <a href="https://neet.vidyamandir.com/" target="_blank">   <img src="assets/img/logo-med.webp" class="img-fluid" alt="VMC Medical"></a>
+                </div>
+                <!-- End Client Item -->
+      
+                <div class="col-xl-3 col-md-3 col-6 client-logo">
+                  <a href="https://www.vidyamandir.com/vmc-live-online/" target="_blank">  <img src="assets/img/Online_Logo.webp" class="img-fluid" alt="VMC Online"></a>
+                </div>
+                <!-- End Client Item -->
+      
+                <div class="col-xl-3 col-md-3 col-6 client-logo">
+                  <a href="https://www.vmcstudyabroad.com/" target="_blank">  <img src="assets/img/StudyAbroad_Logo.webp" class="img-fluid" alt="VMC Studyabroad"></a>
+                </div>
+                <!-- End Client Item -->
+      
+      
+      
+      
+      
+            </div>
+      
+        </div>
+      
+      </section>
+<!-- Start of footer section
+============================================= -->
+<footer id="appseo-footer-area" class="appseo-footer-area-section position-relative" data-background="assets/img/footer.png">
+  <div class="container">
+      <div class="appseo-footer-area">
+          <div class="row">
+              <div class="col-lg-6">
+                  <div class="appseo-footer-widget">
+                      <div class="footer-logo-widget">
+                        
+                          <div class="appseo-footer-about pera-content">
+                         
+                              <strong>Address : </strong>
+                              <span>Vidyamandir Classes,
+                                  1st Floor, Plot no A-7, Aggrawal Corporate Heights,
+                                  Netaji Subhash Place,
+                                  Opposite Wazirpur Depot,
+                                  Pitampura, Delhi</span>
+                          </div>
+                          <div class="appseo-footer-about pera-content mt-3">
+                         
+                            <strong>Phone : </strong>
+                            <a href="tel:8002007500/9818795768/8585947897"> <span>8002007500 / 9818795768 / 8585947897</span></a>
+                        </div>
+                        <div class="appseo-footer-about pera-content mt-3">
+                         
+                          <strong>Email : </strong>
+                          <span>support@vidyamandir.com</span>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3">
+                  <div class="appseo-footer-widget">
+                      <div class="appseo-footer-menu-widget ul-li-block">
+                          <h3 class="appseo-widget-title">Student Resources</h3>
+                          <ul>
+                              <li><a href="https://www.vidyamandir.com/jee-advanced2024-solutions.html" target="_blank">JEE Advanced </a></li>
+                              <li><a href="https://www.vidyamandir.com/JEE-main2024-session1-solutions.html" target="_blank">JEE Main</a></li>
+                              <li><a href="https://www.vidyamandir.com/neet-2022-solutions.html" target="_blank">NEET</a></li>
+                              <li><a href="https://www.vidyamandir.com/mock-test.html" target="_blank">Mock Test Papers</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3">
+                  <div class="appseo-footer-widget">
+                      <div class="appseo-footer-menu-widget ul-li-block">
+                          <h3 class="appseo-widget-title">Quick Links</h3>
+                          <ul>
+                              <li><a href="https://www.vidyamandir.com/Courses/">VMC Programs</a></li>
+                              <li><a href="https://www.vidyamandir.com/vmc_mission_vision.html">Mission & Vision</a></li>
+                              <li><a href="https://www.vidyamandir.com/vmc_edge.html">VMC Edge</a></li>
+                              <li><a href="https://www.vidyamandir.com/toppers-speak.html">Toppers Speak</a></li>
+                             
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="appseo-copyright">
+          <div class="appseo-copyright-text text-dark">
+              <span>© Copyright 2024
+<meta name="keywords" content="">. Developed by <a href="#">vidyamandir classes</a></span>
+          </div>
+          <div class="appseo-footer-social">
+              <a href="https://www.facebook.com/VmcLearning/" target="_blank"><i class="fab fa-facebook-f "></i></a>
+              <a href="https://www.youtube.com/channel/UConPUBSiB7UkdMH2nkYzxAA"  target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="https://x.com/vmclearning"  target="_blank"><img src="https://www.vidyamandir.com/assets/images/twitter-X.png" style="width: 20px;height: 20px;"></a>
+              <a href="https://www.instagram.com/vmc_learning/?hl=en"  target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+  </div>
+</footer>
+<!-- End of footer section
+============================================= -->
+
+<div class="modal fade" id="download" tabindex="-1" aria-labelledby="downloadLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="    width: 300px !important;
+margin: 0 auto;">
+     <div class="modal-header" style="padding: 0px;
+     border: 0px;
+     position: absolute;
+     z-index: 2;
+     background: #fff;
+     right: -13px;
+     border-radius: 41px;
+     width: 30px;
+     height: 29px;
+     text-align: left !important;
+     margin: 0 auto;
+     line-height: 27px;
+     line-height: -61px;
+     font-size: 10px;
+     padding-bottom: 19px;
+     padding-left: 8px;
+     top: -8px;
+     color: #fff !important;
+     text-align: center;
+     justify-content: unset;
+     align-items: baseline;
+     padding-top: 6px;">
+
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+        <div class="modal-body" style="padding: 0px;">
+            <h5 class="modal-title text-center mb-4 mt-3" id="downloadLabel" style="    background: #15216f;
+            line-height: 38px;
+            margin-top: 0px !important;
+            color: #fff;">Enter Details</h5>
+           
+            <form id="leadForm" class="download p-4" onsubmit="handleFormSubmit(event)" style="    padding-top: 0px !important;">
+               
+                <div class="col-sm-12 mt-0">
+                    <input type="text" id="name" name="name" class="contact__input border-0" id="name1" placeholder="Enter your Full Name*" pattern="[A-Za-z ]+" required="" title="Only alphabets are allowed" required>
+                    
+                    <span id="fullname_error1" class="validation_error"></span>
+                  </div>
+      
+                  <!-- Email -->
+                  <div class="col-sm-12 mt-0">
+                    <input type="email" id="email" name="email" class="contact__input border-0" id="email1" placeholder="Enter your Email*"  required>
+                   
+                    <span id="email_error1" class="validation_error"></span>
+                  </div>
+      
+                  <!-- Mobile -->
+                  <div class="col-sm-12 mt-0">
+                    <input type="text" id="phone" name="phone" class="contact__input border-0" id="phone" placeholder="Enter your Phone No.*"  required>
+                   
+                    <span id="email_error1" class="validation_error"></span>
+                  </div>
+      
+                  
+            
+                  <div class="col-sm-12 mt-0 mx-auto">
+                    <button type="submit" style="background: #15216f;
+                    border: 0px;
+                    color: #fbc804;
+                    line-height: 32px;
+                    text-align: center;
+                    margin: 0 auto;
+                    display: block;
+                    border-radius: 20px;
+                    font-size: 14px;
+                    padding: 0px 15px;">Download Now</button>
+                </div>
+            </form>
+            
+        </div>
+    
+      </div>
+    </div>
+  </div>
+
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/tilt.jquery.min.js"></script>
+        <script src="assets/js/owl.js"></script>
+        <script src="assets/js/aos.js"></script>
+        <script src="assets/js/slick.js"></script>
+        <script src="assets/js/jquery.barfiller.js"></script>
+        <script src="assets/js/parallax-scroll.js"></script>
+        <script src="assets/js/jquery.paroller.min.js"></script>
+        <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="assets/js/side-demo.js"></script>
+        <script src="assets/js/script.js"></script>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-------------   surendra doneload code start      -->
+<script>
+    $(document).ready(function() {
+        $('#leadForm').on('submit', function(event) {
+            event.preventDefault(); // Prevent form from submitting normally
+            $('#modal').css('display', 'flex');
+
+            const name = $('#name').val();
+            const email = $('#email').val();
+            const mobileNumber = $('#phone').val();
+            var apiName = "/vmc/insertleadSquardRequest";
+
+    var json = [
+
+        {
+            "Attribute": "FirstName",
+            "Value": name
+        },
+        {
+            "Attribute": "LastName",
+            "Value": 'VMC_ONLINE_Download'
+        },
+        {
+            "Attribute": "Phone",
+            "Value": mobileNumber
+        },
+       {
+            "Attribute": "EmailAddress",
+            "Value": email
+        },
+     
+        {
+            "Attribute": "mx_Selected_Centre",
+            "Value": 555
+        },
+
+        {
+            "Attribute": "mx_Product_URL",
+            "Value": window.location.href
+        }
+
+
+    ];
+    var jsonStr = JSON.stringify(json);
+    //console.log(jsonStr);
+    var headers = {
+        "Content-Type": "application/json",
+        "SupportedApiVersion": 1
+    };
+ callDownloadPDF("POST", apiName, headers, jsonStr);
+
+           
+
+        });
+    });
+
+    function callDownloadPDF(requestType, apiName, headers, payload = null) {
+        let API_BL1 = "https://bl.vidyamandir.com";
+    var url = API_BL1 + apiName;
+
+    callApiForcallDownloadPDF(requestType, url, headers, payload);
+}
+
+
+function callApiForcallDownloadPDF(requestType, apiUrl, headers, payload = null) {
+    //requestInProcessing++;
+    // showLoader();
+    let xhttp = new XMLHttpRequest();
+    xhttp.open(requestType, apiUrl, true);
+    xhttp.onreadystatechange = function() {
+        if (this.readyState === 4) {
+           // requestInProcessing--;
+            // hideLoader();
+            if (this.status === 200) {
+                $('#leadForm')[0].reset();
+                 const pdfUrl = 'https://www.vidyamandir.com/vmc-live-online/img/course-details/Tenatative-Lecture-Planner-Class%20IX.pdf'; // Replace with the actual path to your PDF file
+                window.open(pdfUrl, '_blank');
+
+                $('#download').css('display', 'none');
+                $('.modal-backdrop').css('display', 'none');
+                $('.fade').css('display', 'none');
+                $('.show').css('display', 'none');
+
+            } else if (this.status === 0) {
+                console.log("The computer appears to be offline.");
+            } else {
+                console.log(apiUrl);
+                console.log(this.status);
+                var apiResponse = JSON.parse(this.response);
+                console.log(apiResponse);
+                console.log("Some error occured in api ", apiUrl);
+            }
+        }
+    };
+    for (let key in headers) {
+        xhttp.setRequestHeader(key, headers[key]);
+    }
+    xhttp.send(payload);
+}
+
+
+</script>
+<!-------------   surendra doneload code end      -->
+    </body>
+    </html>          
