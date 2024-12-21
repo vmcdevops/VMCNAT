@@ -94,6 +94,18 @@
     box-shadow: 0px 20px 81px 0px rgba(8, 0, 20, 0.14);
     height: 100%;
 }
+.saas_two_service_section .service_content_box:before {
+    content: "";
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -3;
+    border-radius: 10px;
+    position: absolute;
+    transition: 0.5s all ease-in-out;
+    background-image: linear-gradient(45deg, #d7d7d7d1 32%, #c9c9c9b3 100%);
+}
         </style>
     </head>
 
@@ -207,16 +219,46 @@
                                 </div>
                                 <div class="service_text_box saas2-headline pera-content">
                                     <h3><a href="#"> Online Mode</a></h3>
+                                    <div class="row m-0 mb-3 d-block" style="width: 78%;
+                                    margin: 0 auto !important;
+                                    margin-bottom: 40px !important;
+                                    text-align: center;">
+                                        <div class="col-auto d-flex justify-content-center bg-light text-secondary py-3 px-4" style="background:#fcf7e0 !important; 
+    color: #fff !important;">
+                                          <i class="fa-solid align-self-center fa-indian-rupee-sign h1 mb-0" style="background: #c90;
+                                          padding: 10px;
+                                          width: 57px;
+                                          height: 56px;
+                                          border-radius: 100px;"></i>
+                                        </div>
+                                        <div class="col-sm py-3  bg-light">
+                                           <h4 class="mb-3" style="color: #cc9900;
+    font-size: 17px;">Fee Information</h4>
+                                            <p class="mb-2" style="font-weight: 500;"><span style="font-weight: 300;">Test Date -</span> 22<sup>nd</sup> Dec'24 to 24<sup>th</sup> Jan'25 </p>
+                                            <ul class=" small mb-0 mode-li pl-0 font-weight-bold mt-3" style="background: #fcf7e0;
+                                            line-height: 32px;
+                                            color: #000 !important;
+                                            width: 29%;
+                                            border-radius: 65px;
+                                            margin: 0 auto;">
+                                                <li style="color: #666666;">
+                                                <span class="font-weight-bold">99/-</span>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                
                                     <div class="row m-0">
                                         <div class="col-auto d-flex justify-content-center bg-light text-secondary py-3 px-4" style="background: #ede0f4 !important;
     color: #fff !important;">
                                             <i class="far align-self-center fa-calendar-alt h1 mb-0"></i>
                                         </div>
                                         <div class="col-sm py-3 border-bottom bg-light">
-                                            <p class="mb-2 font-weight-bold"><span style="font-weight: 400;">Test Date -</span> 5<sup>th</sup> January 2025 </p>
-                                            <ul class=" small mb-0 mode-li pl-0 font-weight-bold">
-                                                <li>
-                                                  Test   Slot - <span class="font-weight-bold">11:00 am to 1:30 pm</span>
+                                            <p class="mb-2 " style="font-weight: 500;"><span style="font-weight: 400;">Test Date -</span> 5<sup>th</sup> January 2025 </p>
+                                            <ul class=" small mb-0 mode-li pl-0 font-weight-bold" >
+                                                <li >
+                                                 Morning - <span class="">11:00 am to 1:30 pm</span>
                                                 </li>
                                                 
                                             </ul>
@@ -229,10 +271,10 @@
                                             <i class="far align-self-center fa-calendar-alt h1 mb-0"></i>
                                         </div>
                                         <div class="col-sm py-3 border-bottom bg-light">
-                                            <p class="mb-2 font-weight-bold"><span style="font-weight: 400;">Test Date -</span> 18<sup>th</sup> January 2025 </p>
+                                            <p class="mb-2" style="font-weight: 500;"><span style="font-weight: 400;">Test Date -</span> 18<sup>th</sup> January 2025 </p>
                                             <ul class="small mb-0 mode-li pl-0 font-weight-bold">
                                                 <li>
-                                                    Test Slot - <span class="font-weight-bold">3:00 pm to 5:30 pm</span>
+                                                   Evening - <span class="" style="font-weight: 500;">3:00 pm to 5:30 pm</span>
                                                 </li>
                                                 
                                             </ul>
@@ -245,10 +287,10 @@
                                             <i class="far align-self-center fa-calendar-alt h1 mb-0"></i>
                                         </div>
                                         <div class="col-sm py-3 border-bottom bg-light">
-                                            <p class="mb-2 font-weight-bold"><span style="font-weight: 400;">Test Date -</span> 25<sup>th</sup> January 2025 </p>
+                                            <p class="mb-2 " style="font-weight: 500;"><span style="font-weight: 400;">Test Date -</span> 25<sup>th</sup> January 2025 </p>
                                             <ul class="pl-0 small mb-0 mode-li ">
                                                 <li>
-                                                   Test  Slot - <span class="font-weight-bold">3:00 pm to 5:30 pm</span> 
+                                                   Evening - <span style="font-weight: 500;">3:00 pm to 5:30 pm</span> 
                                                 </li>
                                                 
                                             </ul>
@@ -270,16 +312,45 @@
                                 </div>
                                 <div class="service_text_box saas2-headline pera-content">
                                     <h3><a href="#">Offline Mode</a></h3>
+                                    <div class="row m-0 mb-3 d-block" style="width: 78%;
+                                    margin: 0 auto !important;
+                                    margin-bottom: 40px !important;
+                                    text-align: center;">
+                                        <div class="col-auto d-flex justify-content-center bg-light text-secondary py-3 px-4" style="background: #fcf7e0 !important; 
+    color: #fff !important;">
+                                          <i class="fa-solid align-self-center fa-indian-rupee-sign h1 mb-0" style="background: #c90;
+                                          padding: 10px;
+                                          width: 57px;
+                                          height: 56px;
+                                          border-radius: 100px;"></i>
+                                        </div>
+                                        <div class="col-sm py-3  bg-light">
+                                           <h4 class="mb-3" style="color: #cc9900;
+    font-size: 17px;">Fee Information</h4>
+                                            <p class="mb-2" style="font-weight: 500;"><span style="font-weight: 300;">Test Date -</span> 22<sup>nd</sup> Dec'24 to 24<sup>th</sup> Jan'25 </p>
+                                            <ul class=" small mb-0 mode-li pl-0 font-weight-bold mt-3" style="background: #fcf7e0;
+                                            line-height: 32px;
+                                            color: #fff !important;
+                                            width: 29%;
+                                            border-radius: 65px;
+                                            margin: 0 auto;">
+                                                <li style="color: #666666;">
+                                                <span class="font-weight-bold">49/-</span>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
                                     <div class="row m-0">
                                         <div class="col-auto d-flex justify-content-center bg-light text-secondary py-3 px-4" style="background: #ede0f4 !important;
     color: #fff !important;">
                                             <i class="far align-self-center fa-calendar-alt h1 mb-0"></i>
                                         </div>
                                         <div class="col-sm py-3 border-bottom bg-light">
-                                            <p class="mb-2 font-weight-bold"><span style="font-weight: 400;">Test Date -</span> 12<sup>th</sup> January 2025 </p>
+                                            <p class="mb-2 " style="font-weight: 500;"><span style="font-weight: 400;">Test Date -</span> 12<sup>th</sup> January 2025 </p>
                                             <ul class=" small mb-0 mode-li pl-0 font-weight-bold">
                                                 <li>
-                                                  Test   Slot - <span class="font-weight-bold">11:00 am to 1:30 pm</span>
+                                                  Morning - <span style="font-weight: 500;">11:00 am to 1:30 pm</span>
                                                 </li>
                                                 
                                             </ul>
@@ -292,10 +363,10 @@
                                             <i class="far align-self-center fa-calendar-alt h1 mb-0"></i>
                                         </div>
                                         <div class="col-sm py-3 border-bottom bg-light">
-                                            <p class="mb-2 font-weight-bold"><span style="font-weight: 400;">Test Date -</span> 19<sup>th</sup> January 2025 </p>
+                                            <p class="mb-2" style="font-weight: 500;"><span style="font-weight: 400;">Test Date -</span> 19<sup>th</sup> January 2025 </p>
                                             <ul class="small mb-0 mode-li pl-0 font-weight-bold">
                                                 <li>
-                                                    Test Slot - <span class="font-weight-bold">11:00 am to 1:30 pm</span>
+                                                    Morning - <span style="font-weight: 500;">11:00 am to 1:30 pm</span>
                                                 </li>
                                                 
                                             </ul>
