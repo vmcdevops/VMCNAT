@@ -1544,6 +1544,146 @@ color: #555555;
 .reg-fee{
   color:  #c81d0a;text-align: center;
 }
+.xis-dia-testimonial-content .carousel-indicators [data-target] {
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 80px;
+  z-index: 3;
+  height: 80px;
+  text-indent: 0;
+  border: none;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-transform-origin: 50% 1px;
+  transform-origin: 50% 1px;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+  .w-35{
+width: 100%;
+}
+.appseo-mobile_menu_content {
+  top: 0px;
+  bottom: 0;
+  right: -350px;
+  height: 100vh;
+  z-index: 101;
+  position: fixed;
+  width: 280px;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 40px 0px;
+  box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.19);
+  transition: all 0.5s ease-in;
+}
+.appseo-banner-section .appseo-banner-content .banner-btn .qut-btn a {
+  display: block;
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  font-size: 15px;
+}
+.appseo-mobile_menu_button {
+  position: absolute;
+  display: block;
+  right: 0;
+  cursor: pointer;
+  line-height: 40px;
+  color: #ffc900;
+  text-align: center;
+  font-size: 30px;
+  top: -52px;
+  z-index: 5;
+}
+}
+
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .t-name{
+    font-size: 20px;
+      COLOR: #ffcb05;
+    }
+  .clients .client-logo img {
+    padding: 20px 23px;
+    max-width: 100%;
+    transition: 0.3s;
+    opacity: 1 !important;
+    filter: none !important;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    display: block;
+}
+.saasio-breadcurmb-section {
+  background-color: #27266a;
+  padding: 150px 0px 70px;
+}
+.xis-dia-about-text-wrapper {
+  padding: 3px 0px 0px 2px;
+}
+.xis-dia-about-img-wrapper{
+  display:none
+}
+  .appseo-banner-section .appseo-banner-content h1 {
+      font-size: 21px;
+      text-align: center !important;
+      display: block;
+  }
+  .appseo-banner-section .appseo-banner-content {
+    max-width: 480px;
+    padding: 153px 0px 70px 0px;
+    text-align: center;
+}
+.reg-text{
+  font-size: 14px;
+  text-align: center;
+}
+.reg-fee{
+  color:  #c81d0a;text-align: center;
+}
+.xis-dia-testimonial-content .carousel-indicators [data-target] {
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 80px;
+  z-index: 3;
+  height: 80px;
+  text-indent: 0;
+  border: none;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-transform-origin: 50% 1px;
+  transform-origin: 50% 1px;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
   .w-35{
 width: 100%;
 }
