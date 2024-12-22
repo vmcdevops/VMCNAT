@@ -903,7 +903,7 @@ function updateUIAsPerCartInfo() {
         } else if (examType == 6) {
             Couponlaodproce = 99;
         }
-        htmlInfo = '<span style="font-size: 15px; text-decoration: line-through; text-decoration-color: red;">&#8377 999</span><span style="font-size: 22px; font-family:cera bold; margin-left: 10px; color:#f00">&#8377 ' + Couponlaodproce + " Only</span>";
+        htmlInfo = '<span style="font-size: 15px; text-decoration: line-through; text-decoration-color: red;">&#8377 999</span><span style="font-size: 22px; font-weight:900; margin-left: 10px; color:#f00">&#8377 ' + Couponlaodproce + " Only</span>";
         //htmlInfo = '<span style="font-size: 14px; margin-left: 20px;">&#8377 ' + Couponlaodproce + " Only</span>";
     }
     var regfee = document.getElementsByClassName("registration_fee");

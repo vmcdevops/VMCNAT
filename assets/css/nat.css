@@ -1,3 +1,15 @@
+.reg-fee{
+  color:  #c81d0a;text-align: left;
+}
+
+.reg-text{
+  font-size: 14px;
+  text-align: right;
+}
+.t-name{
+  font-size: 24px;
+    COLOR: #ffcb05;
+  }
 .appseo-main-header.appseo-sticky-header-overlay .header-button {
   margin-top: 15px;
 }
@@ -1485,6 +1497,10 @@ color: #555555;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  .t-name{
+    font-size: 20px;
+      COLOR: #ffcb05;
+    }
   .clients .client-logo img {
     padding: 20px 23px;
     max-width: 100%;
@@ -1512,8 +1528,22 @@ color: #555555;
   display:none
 }
   .appseo-banner-section .appseo-banner-content h1 {
-      font-size: 27px;
+      font-size: 21px;
+      text-align: center !important;
+      display: block;
   }
+  .appseo-banner-section .appseo-banner-content {
+    max-width: 480px;
+    padding: 153px 0px 70px 0px;
+    text-align: center;
+}
+.reg-text{
+  font-size: 14px;
+  text-align: center;
+}
+.reg-fee{
+  color:  #c81d0a;text-align: center;
+}
   .w-35{
 width: 100%;
 }
