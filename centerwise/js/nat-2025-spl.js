@@ -897,11 +897,11 @@ function updateUIAsPerCartInfo() {
     } else {
         //htmlInfo = '<span style="font-size: 14px; margin-left: 20px;">&#8377 ' + parseInt(userCartSummery.total_amount) + " Only</span>";
         if (is_special) {
-            Couponlaodproce = 99
+            Couponlaodproce = 0
         } else if (examType == 2) {
-            Couponlaodproce = 99;
+            Couponlaodproce = 0;
         } else if (examType == 6) {
-            Couponlaodproce = 99;
+            Couponlaodproce = 0;
         }
         htmlInfo = '<span style="font-size: 15px; text-decoration: line-through; text-decoration-color: red;">&#8377 999</span><span style="font-size: 22px; font-weight:900; margin-left: 10px; color:#f00">&#8377 ' + Couponlaodproce + " Only</span>";
         //htmlInfo = '<span style="font-size: 14px; margin-left: 20px;">&#8377 ' + Couponlaodproce + " Only</span>";
