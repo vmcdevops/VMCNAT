@@ -1934,7 +1934,7 @@ function updateCentersOptions(centerListJSON) {
         var center = centerListArr[i];
         var option = document.createElement("option");
         option.value = center.code;
-        if (center.code == '101') {
+        if (center.code == '101' || center.code == '102' ) {
             option.text = center.value;
             elCenter.add(option);
         }
