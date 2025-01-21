@@ -1611,6 +1611,12 @@ width: 100%;
 
 
 @media (min-width: 480px) and (max-width: 768px) {
+  .cal-date {
+    background: #312e5d;
+    width: 94%;
+    padding: 6px 10px;
+    border-radius: 10px;
+}
   .t-name{
     font-size: 20px;
       COLOR: #ffcb05;
