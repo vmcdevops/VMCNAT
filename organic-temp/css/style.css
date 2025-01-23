@@ -99,14 +99,17 @@ p
 
 
 /*** Navbar ***/
-.navbar-light .navbar-nav .nav-link {
-    position: relative;
-    margin-left: 25px;
-    padding: 35px 0;
-    color: #77787a !important;
-    outline: none;
-    transition: .5s;
-}
+
+    .navbar-light .navbar-nav .nav-link {
+        position: relative;
+        margin-left: 25px;
+        padding: 35px 0;
+        color: #77787a !important;
+        outline: none;
+        transition: .5s;
+        font-size: 15px;
+    }
+
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
