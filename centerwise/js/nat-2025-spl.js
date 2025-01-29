@@ -557,7 +557,7 @@ function natDateOptionSelected() {
         if (select_test_mode.value == "Online" || select_test_mode.value == "online") {
             //NAT
             if (selectedNatDate.id == 451 || selectedNatDate.id == 453 || selectedNatDate.id == 455) {
-                couponCodeGlobal = 'NATSPL0';
+                couponCodeGlobal = 'NATSPSC49';
                 applyCouponWithCouponCode(couponCodeGlobal);
                 document.getElementById("couponCode").disabled = dalse;
                 document.getElementById("couponCode").value = couponCodeGlobal;
@@ -566,7 +566,7 @@ function natDateOptionSelected() {
         }
         if (select_test_mode.value == "Offline" || select_test_mode.value == "offline") {
             if (selectedNatDate.id == 452 || selectedNatDate.id == 454) {
-                couponCodeGlobal = 'NATSPL0';
+                couponCodeGlobal = 'NATSPSC49';
                 applyCouponWithCouponCode(couponCodeGlobal);
                 document.getElementById("couponCode").disabled = dalse;
                 document.getElementById("couponCode").value = couponCodeGlobal;
@@ -586,7 +586,7 @@ function natDateOptionSelected() {
         }
         if (select_test_mode.value == "Offline" || select_test_mode.value == "offline") {
             if (selectedNatDate.id == 452 || selectedNatDate.id == 454) {
-                couponCodeGlobal = 'NATSPL0';
+                couponCodeGlobal = 'NATSPSC49';
                 applyCouponWithCouponCode(couponCodeGlobal);
                 document.getElementById("couponCode").disabled = dalse;
                 document.getElementById("couponCode").value = couponCodeGlobal;
@@ -598,7 +598,7 @@ function natDateOptionSelected() {
         if (select_test_mode.value == "Online" || select_test_mode.value == "online") {
             //NAT
             if (selectedNatDate.id == 451 || selectedNatDate.id == 453 || selectedNatDate.id == 455) {
-                couponCodeGlobal = 'NATSPL0';
+                couponCodeGlobal = 'NATSPSC49';
                 applyCouponWithCouponCode(couponCodeGlobal);
                 document.getElementById("couponCode").disabled = dalse;
                 document.getElementById("couponCode").value = couponCodeGlobal;
@@ -608,7 +608,7 @@ function natDateOptionSelected() {
         if (select_test_mode.value == "Offline" || select_test_mode.value == "offline") {
             //NAT
             if (selectedNatDate.id == 452 || selectedNatDate.id == 454) {
-                couponCodeGlobal = 'NATSPL0';
+                couponCodeGlobal = 'NATSPSC49';
                 applyCouponWithCouponCode(couponCodeGlobal);
                 document.getElementById("couponCode").disabled = dalse;
                 document.getElementById("couponCode").value = couponCodeGlobal;
@@ -941,7 +941,7 @@ function getCartSuccess(responseText) {
                 document.getElementById("couponCode").value = "VINit99";
             }
             if (examType == 2) {
-                document.getElementById("couponCode").value = 'NATSPL0';
+                document.getElementById("couponCode").value = 'NATSPSC49';
             }
         } else if (is_special) {
             if (examType == 2) {
@@ -951,7 +951,7 @@ function getCartSuccess(responseText) {
                 document.getElementById("couponCode").value = 'VMCDMRC';
             }
         } else if (examType == 2) {
-            document.getElementById("couponCode").value = 'NATSPL0';
+            document.getElementById("couponCode").value = 'NATSPSC49';
 
         } else {
             document.getElementById("couponCode").value = 'VINit99';
