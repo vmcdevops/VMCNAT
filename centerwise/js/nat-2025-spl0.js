@@ -557,7 +557,7 @@ function natDateOptionSelected() {
         if (select_test_mode.value == "Online" || select_test_mode.value == "online") {
             //NAT
             if (selectedNatDate.id == 451 || selectedNatDate.id == 453 || selectedNatDate.id == 455) {
-                couponCodeGlobal = 'NATSPSC49';
+                couponCodeGlobal = 'NATSPl0';
                 applyCouponWithCouponCode(couponCodeGlobal);
                 document.getElementById("couponCode").disabled = dalse;
                 document.getElementById("couponCode").value = couponCodeGlobal;
@@ -566,7 +566,7 @@ function natDateOptionSelected() {
         }
         if (select_test_mode.value == "Offline" || select_test_mode.value == "offline") {
             if (selectedNatDate.id == 452 || selectedNatDate.id == 454) {
-                couponCodeGlobal = 'NATSPSC49';
+                couponCodeGlobal = 'NATSPl0';
                 applyCouponWithCouponCode(couponCodeGlobal);
                 document.getElementById("couponCode").disabled = dalse;
                 document.getElementById("couponCode").value = couponCodeGlobal;
@@ -586,7 +586,7 @@ function natDateOptionSelected() {
         }
         if (select_test_mode.value == "Offline" || select_test_mode.value == "offline") {
             if (selectedNatDate.id == 452 || selectedNatDate.id == 454) {
-                couponCodeGlobal = 'NATSPSC49';
+                couponCodeGlobal = 'NATSPl0';
                 applyCouponWithCouponCode(couponCodeGlobal);
                 document.getElementById("couponCode").disabled = dalse;
                 document.getElementById("couponCode").value = couponCodeGlobal;
@@ -598,7 +598,7 @@ function natDateOptionSelected() {
         if (select_test_mode.value == "Online" || select_test_mode.value == "online") {
             //NAT
             if (selectedNatDate.id == 451 || selectedNatDate.id == 453 || selectedNatDate.id == 455) {
-                couponCodeGlobal = 'NATSPSC49';
+                couponCodeGlobal = 'NATSPl0';
                 applyCouponWithCouponCode(couponCodeGlobal);
                 document.getElementById("couponCode").disabled = dalse;
                 document.getElementById("couponCode").value = couponCodeGlobal;
@@ -608,7 +608,7 @@ function natDateOptionSelected() {
         if (select_test_mode.value == "Offline" || select_test_mode.value == "offline") {
             //NAT
             if (selectedNatDate.id == 452 || selectedNatDate.id == 454) {
-                couponCodeGlobal = 'NATSPSC49';
+                couponCodeGlobal = 'NATSPl0';
                 applyCouponWithCouponCode(couponCodeGlobal);
                 document.getElementById("couponCode").disabled = dalse;
                 document.getElementById("couponCode").value = couponCodeGlobal;
@@ -897,11 +897,11 @@ function updateUIAsPerCartInfo() {
     } else {
         //htmlInfo = '<span style="font-size: 14px; margin-left: 20px;">&#8377 ' + parseInt(userCartSummery.total_amount) + " Only</span>";
         if (is_special) {
-            Couponlaodproce = 49
+            Couponlaodproce = 0
         } else if (examType == 2) {
-            Couponlaodproce = 49;
+            Couponlaodproce = 0;
         } else if (examType == 6) {
-            Couponlaodproce = 49;
+            Couponlaodproce = 0;
         }
         htmlInfo = '<span style="font-size: 15px; text-decoration: line-through; text-decoration-color: red;">&#8377 999</span><span style="font-size: 22px; font-weight:900; margin-left: 10px; color:#f00">&#8377 ' + Couponlaodproce + " Only</span>";
         //htmlInfo = '<span style="font-size: 14px; margin-left: 20px;">&#8377 ' + Couponlaodproce + " Only</span>";
@@ -941,7 +941,7 @@ function getCartSuccess(responseText) {
                 document.getElementById("couponCode").value = "VINit99";
             }
             if (examType == 2) {
-                document.getElementById("couponCode").value = 'NATSPSC49';
+                document.getElementById("couponCode").value = 'NATSPl0';
             }
         } else if (is_special) {
             if (examType == 2) {
@@ -951,7 +951,7 @@ function getCartSuccess(responseText) {
                 document.getElementById("couponCode").value = 'VMCDMRC';
             }
         } else if (examType == 2) {
-            document.getElementById("couponCode").value = 'NATSPSC49';
+            document.getElementById("couponCode").value = 'NATSPl0';
 
         } else {
             document.getElementById("couponCode").value = 'VINit99';
