@@ -557,7 +557,7 @@ function natDateOptionSelected() {
         if (select_test_mode.value == "Online" || select_test_mode.value == "online") {
             //NAT
             if (selectedNatDate.id == 451 || selectedNatDate.id == 453 || selectedNatDate.id == 455 || selectedNatDate.id == 460) {
-                couponCodeGlobal = 'NATOR99';
+                couponCodeGlobal = 'NAT99';
                 applyCouponWithCouponCode(couponCodeGlobal);
                 document.getElementById("couponCode").disabled = dalse;
                 document.getElementById("couponCode").value = couponCodeGlobal;
@@ -576,7 +576,7 @@ function natDateOptionSelected() {
     } else if (is_special) {
         if (select_test_mode.value == "Online" || select_test_mode.value == "online") {
             //NAT
-            if (selectedNatDate.id == 451 || selectedNatDate.id == 453 || selectedNatDate.id == 455 || selectedNatDate.id == 460) {
+            if (selectedNatDate.id == 451 || selectedNatDate.id == 453 || selectedNatDate.id == 455) {
                 couponCodeGlobal = 'VMCDMRC';
                 applyCouponWithCouponCode(couponCodeGlobal);
                 document.getElementById("couponCode").disabled = dalse;
@@ -598,7 +598,7 @@ function natDateOptionSelected() {
         if (select_test_mode.value == "Online" || select_test_mode.value == "online") {
             //NAT
             if (selectedNatDate.id == 451 || selectedNatDate.id == 453 || selectedNatDate.id == 455 || selectedNatDate.id == 460) {
-                couponCodeGlobal = 'NATOR99';
+                couponCodeGlobal = 'NAT99';
                 applyCouponWithCouponCode(couponCodeGlobal);
                 document.getElementById("couponCode").disabled = dalse;
                 document.getElementById("couponCode").value = couponCodeGlobal;
@@ -903,7 +903,7 @@ function updateUIAsPerCartInfo() {
         } else if (examType == 6) {
             Couponlaodproce = 99;
         }
-        htmlInfo = '<span style="font-size: 15px; text-decoration: line-through; text-decoration-color: red;">&#8377 999</span><span style="font-size: 22px; font-weight:900; margin-left: 10px; color:#f00">&#8377 ' + Couponlaodproce + " Only</span>";
+        htmlInfo = '<span style="font-size: 15px; text-decoration: line-through; text-decoration-color: red;">&#8377 999</span><span style="font-size: 22px; font-family:cera bold; margin-left: 10px; color:#f00">&#8377 ' + Couponlaodproce + " Only</span>";
         //htmlInfo = '<span style="font-size: 14px; margin-left: 20px;">&#8377 ' + Couponlaodproce + " Only</span>";
     }
     var regfee = document.getElementsByClassName("registration_fee");
@@ -941,7 +941,7 @@ function getCartSuccess(responseText) {
                 document.getElementById("couponCode").value = "VINit99";
             }
             if (examType == 2) {
-                document.getElementById("couponCode").value = 'NATOR99';
+                document.getElementById("couponCode").value = 'NAT99';
             }
         } else if (is_special) {
             if (examType == 2) {
@@ -951,7 +951,7 @@ function getCartSuccess(responseText) {
                 document.getElementById("couponCode").value = 'VMCDMRC';
             }
         } else if (examType == 2) {
-            document.getElementById("couponCode").value = 'NATOR99';
+            document.getElementById("couponCode").value = 'NAT99';
 
         } else {
             document.getElementById("couponCode").value = 'VINit99';
