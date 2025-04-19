@@ -1543,7 +1543,25 @@ mock tests</li>
     <!-- End of footer section
         ============================================= -->
 
+       <!-- Modal -->
+<div class="modal fade" id="onLoadModal" tabindex="-1" aria-labelledby="onLoadModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div  class="modal-body p-0 border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="position: absolute;
+        background: #ebbd00;
+        border: 0px;
+        border-radius: 0 0 153px 153px;
+        height: 21px;
+        font-size: 12px;
+        text-align: right;
+        right: 0;">X</button>
+        <a href="https://www.vmcnat.com/" target="_blank">  <img src="assets/img/main-result.png" alt="center opening"></a>
+      </div>
+  </div>
+</div>
 
+  
         <!-- JS library -->
         <script src="assets/js/jquery.js"></script>
         <script src="assets/js/popper.min.js"></script>
@@ -1566,7 +1584,13 @@ mock tests</li>
         <script src="https://in8cdn.npfs.co/js/widget/npfwpopup.js"></script>
         <script src="https://code.jivosite.com/widget/tT4NtKH0ck" async></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-       
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+          window.addEventListener('load', () => {
+            const myModal = new bootstrap.Modal(document.getElementById('onLoadModal'));
+            myModal.show();
+          });
+        </script>
       <script>
         $(document).ready(function() {
             $("#viq_tab, #viq_tab2").click(function() {
