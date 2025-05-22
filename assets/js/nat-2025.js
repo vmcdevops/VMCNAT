@@ -557,8 +557,8 @@ function natDateOptionSelected() {
     if (is_app) {
         if (select_test_mode.value == "Online" || select_test_mode.value == "online") {
             //NAT
-            if (selectedNatDate.id == 490 || selectedNatDate.id == 491 || selectedNatDate.id == 492 || selectedNatDate.id == 493 
-                || selectedNatDate.id == 494 || selectedNatDate.id == 495 || selectedNatDate.id == 496 || selectedNatDate.id == 497)
+            if (selectedNatDate.id == 496 || selectedNatDate.id == 497 || selectedNatDate.id == 499 || selectedNatDate.id == 500 || selectedNatDate.id == 501 || 
+                selectedNatDate.id == 503 || selectedNatDate.id == 504 )
             {
                 couponCodeGlobal = 'NATOR99';
                 applyCouponWithCouponCode(couponCodeGlobal);
@@ -567,7 +567,7 @@ function natDateOptionSelected() {
             }
         }
         if (select_test_mode.value == "Offline" || select_test_mode.value == "offline") {
-            if (selectedNatDate.id == 490 || selectedNatDate.id == 493 || selectedNatDate.id == 496 || selectedNatDate.id == 498) {
+            if (selectedNatDate.id == 502) {
                 couponCodeGlobal = 'NATOR49';
                 applyCouponWithCouponCode(couponCodeGlobal);
                 document.getElementById("couponCode").disabled = dalse;
@@ -578,8 +578,8 @@ function natDateOptionSelected() {
     } else if (is_special) {
         if (select_test_mode.value == "Online" || select_test_mode.value == "online") {
             //NAT
-            if (selectedNatDate.id == 490 || selectedNatDate.id == 491 || selectedNatDate.id == 492 || selectedNatDate.id == 493 
-                || selectedNatDate.id == 494 || selectedNatDate.id == 495 || selectedNatDate.id == 496 || selectedNatDate.id == 497)
+            if (selectedNatDate.id == 496 || selectedNatDate.id == 497 || selectedNatDate.id == 499 || selectedNatDate.id == 500 || selectedNatDate.id == 501 || 
+                selectedNatDate.id == 503 || selectedNatDate.id == 504 )
             {
                 couponCodeGlobal = 'NATOR99';
                 applyCouponWithCouponCode(couponCodeGlobal);
@@ -588,7 +588,7 @@ function natDateOptionSelected() {
             }
         }
         if (select_test_mode.value == "Offline" || select_test_mode.value == "offline") {
-            if (selectedNatDate.id == 490 || selectedNatDate.id == 493 || selectedNatDate.id == 496 || selectedNatDate.id == 498) {
+            if (selectedNatDate.id == 502) {
                 couponCodeGlobal = 'NATOR49';
                 applyCouponWithCouponCode(couponCodeGlobal);
                 document.getElementById("couponCode").disabled = dalse;
@@ -599,30 +599,28 @@ function natDateOptionSelected() {
 
     } else {
         if (select_test_mode.value == "Online" || select_test_mode.value == "online") {
-                //NAT
-                if (selectedNatDate.id == 490 || selectedNatDate.id == 491 || selectedNatDate.id == 492 || selectedNatDate.id == 493 
-                    || selectedNatDate.id == 494 || selectedNatDate.id == 495 || selectedNatDate.id == 496 || selectedNatDate.id == 497)
-                {
-                    couponCodeGlobal = 'NATOR99';
-                    applyCouponWithCouponCode(couponCodeGlobal);
-                    document.getElementById("couponCode").disabled = dalse;
-                    document.getElementById("couponCode").value = couponCodeGlobal;
-                }
+            //NAT
+            if (selectedNatDate.id == 496 || selectedNatDate.id == 497 || selectedNatDate.id == 499 || selectedNatDate.id == 500 || selectedNatDate.id == 501 || 
+                selectedNatDate.id == 503 || selectedNatDate.id == 504 )
+            {
+                couponCodeGlobal = 'NATOR99';
+                applyCouponWithCouponCode(couponCodeGlobal);
+                document.getElementById("couponCode").disabled = dalse;
+                document.getElementById("couponCode").value = couponCodeGlobal;
             }
-            if (select_test_mode.value == "Offline" || select_test_mode.value == "offline") {
-                if (selectedNatDate.id == 490 || selectedNatDate.id == 493 || selectedNatDate.id == 496 || selectedNatDate.id == 498) {
-                    couponCodeGlobal = 'NATOR49';
-                    applyCouponWithCouponCode(couponCodeGlobal);
-                    document.getElementById("couponCode").disabled = dalse;
-                    document.getElementById("couponCode").value = couponCodeGlobal;
-                }
-    
+        }
+        if (select_test_mode.value == "Offline" || select_test_mode.value == "offline") {
+            if (selectedNatDate.id == 502) {
+                couponCodeGlobal = 'NATOR49';
+                applyCouponWithCouponCode(couponCodeGlobal);
+                document.getElementById("couponCode").disabled = dalse;
+                document.getElementById("couponCode").value = couponCodeGlobal;
             }
+
+        }
     }
     changePriceCoupon();
 }
-
-
 /****
  * 2022-07-15
  * Added by Ajay for change amount on basis of test date and selected class
