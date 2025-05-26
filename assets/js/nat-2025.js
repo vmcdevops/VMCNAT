@@ -1934,9 +1934,8 @@ function updateCentersOptions(centerListJSON) {
         var center = centerListArr[i];
         var option = document.createElement("option"); 
         option.value = center.code;
-    if ((select_test_mode.value == "Offline") && (selectedDateTime == 'VMC VIQ+ 17 Nov 2024 10 AM - 12:30 PM')) {
-        if(option.value==143 || option.value==195 || option.value==152 || option.value==142 || option.value==200 || option.value==151 || option.value==137
-            || option.value==153 || option.value==187 || option.value==163 || option.value==162 || option.value==194 || option.value==116 || option.value==140 || option.value==149 || option.value==126 || option.value==115 ){
+    if ((select_test_mode.value == "Offline") && (selectedDateTime == 'VMC NAT 1 Jun 2025 11 AM - 1:30 PM')) {
+        if(option.value==195 || option.value==152 || option.value==153 || option.value==151){
             option.value = center.code;
             option.text = center.value;
             elCenter.add(option);
