@@ -5,7 +5,7 @@ Disallow: /login/
 Disallow: /search/
 Disallow: /private/
 Disallow: /tmp/
-
+Disallow: https://vmcnat.com
 
 # Sitemap location
 Sitemap: https://vmcnat.com/sitemap.xml
